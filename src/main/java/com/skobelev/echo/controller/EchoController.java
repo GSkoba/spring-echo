@@ -11,4 +11,9 @@ public class EchoController {
     public String echo(@RequestParam(name = "msg") String msg) {
         return "Echo: " + msg + " serverTime = " + System.currentTimeMillis();
     }
+
+    @GetMapping("/greeting")
+    public String greeting() {
+        return "Hello world";
+    }
 }
